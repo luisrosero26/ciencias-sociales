@@ -1,0 +1,27 @@
+completion_text: |-
+  <p>asdasd</p>
+description: |-
+  asda
+next_flow_id: quiz17
+next_flow_title: Tomar quiz semana 1
+pages:
+- content: |-
+    <p>asdasd</p>
+  id: intro
+  title: INICIO
+  type: Page
+- content: |-
+    <p>asdasd</p>
+  id: page22
+  title: dia1
+  type: Page
+rules:
+  access:
+  - if_has_role:
+    - ta
+    - student
+    - instructor
+    permissions:
+    - view
+  grade_identifier: null
+title: Sema1
