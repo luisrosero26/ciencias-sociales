@@ -1,0 +1,27 @@
+completion_text: |-
+  <p>asdasdasd</p>
+description: |-
+  asdasasdas
+next_flow_id: quiz18
+next_flow_title: Tomar quiz semana 2
+pages:
+- content: |-
+    <p>asd</p>
+  id: intro
+  title: INICIO
+  type: Page
+- content: |-
+    <p>asdaasdasd</p>
+  id: page23
+  title: dia 1
+  type: Page
+rules:
+  access:
+  - if_has_role:
+    - ta
+    - student
+    - instructor
+    permissions:
+    - view
+  grade_identifier: null
+title: sema2
