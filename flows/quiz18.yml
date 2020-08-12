@@ -1,0 +1,58 @@
+completion_text: |-
+  <p>asdasd</p>
+description: |-
+  asda s
+groups:
+- id: intro
+  pages:
+  - content: "<p>asdasd</p> "
+    id: welcome
+    title: quiz 2
+    type: Page
+- id: quiz_start
+  pages:
+  - choices:
+    - ~CORRECT~ 4
+    - ~CORRECT~ cuatro
+    - '5'
+    credit_mode: proportional
+    id: quizquestion26
+    prompt: ''
+    shuffle: false
+    title: 1+3
+    type: MultipleChoiceQuestion
+    value: 25.0
+  - choices:
+    - ~CORRECT~ 8
+    - '9'
+    - '10'
+    id: quizquestion27
+    prompt: ''
+    title: 7+1
+    type: ChoiceQuestion
+    value: 25.0
+  shuffle: false
+rules:
+  access:
+  - permissions:
+    - view
+    - submit_answer
+    - end_session
+    - see_correctness
+    - see_answer_after_submission
+  grade_aggregation_strategy: use_latest
+  grade_identifier: quiz18
+  grading:
+  - credit_percent: 100
+  start:
+  - if_before: 2020-08-13 17:29:42+00:00
+    if_has_fewer_sessions_than: 1
+    if_has_role:
+    - student
+    - ta
+    - instructor
+    may_list_existing_sessions: true
+    may_start_new_session: true
+  - may_list_existing_sessions: true
+    may_start_new_session: false
+title: quiz 2
